@@ -428,13 +428,9 @@
 
         // Handle download button click
         document.getElementById('downloadBtn').addEventListener('click', function() {
-            // Create a temporary link to trigger download
-            const link = document.createElement('a');
-            link.href = 'Arcadia.zip';
-            link.download = 'Arcadia.zip';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+    window.location.href = "https://www.dropbox.com/";
+});
+
             
             // Button feedback
             this.innerHTML = '<span>Download Started!</span> <i class="fas fa-check"></i>';
